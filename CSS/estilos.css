@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;900&display=swap');
+
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+@keyframes efecto {
+
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+/*  GENERAL */
+
+.logo {
+
+    animation-name: efecto;
+    animation-duration: 3s;
+    position: relative;
+    top: 150px;
+    
+    
+}
+
+.enlaces__hamburguesa {
+
+    display: none;
+}
+
+   
+
+.imagenfondo {
+
+   
+   background-image: linear-gradient(to left, #304352, #d7d2cc );
+
+}
+
+
+
+.enlaces {
+
+    font-size: larger;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(83, 180, 38);
+    font-family: 'Orbitron', sans-serif;
+}
+
+
+
+.navegacion {
+
+    display: flex;
+    justify-content: space-evenly;
+    background-color: wheat;
+    font-weight: 900;
+
+}
+
+
+
+.redes {
+
+
+    position: fixed;
+    z-index: 11px;
+    bottom: 0;
+    right: 0;
+    text-decoration: none;
+    color: rgb(193, 202, 70);
+    padding: 10px;
+
+
+}
+
+.redes__imagenes {
+
+    display: flex;
+    justify-content: center;
+
+
+}
+
+
+
+.texto__footer {
+
+    color: black;
+    font-weight: 600;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.2;
+    text-align: center;
+    
+}
+
+
+
+/*  INICIO */
+
+.titulo__principal {
+
+    position: relative;
+    top: 200px;
+    right: 550px;
+    text-align: center;
+    color: rgb(177, 44, 44);
+    font-family: 'Orbitron', sans-serif;
+    text-decoration: underline;
+   
+}
+
+
+
+.parrafo__inicio    {
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+    font-family:'Orbitron', sans-serif ;
+    font-weight: 600;
+    color: white;
+   
+}
+
+.imagen__inicio {
+
+    border-radius: 10rem;
+    border: 3px solid rgb(136, 55, 1);
+    
+}
+
+/*  NOSOTROS */
+
+.titulo__nosotros {
+
+    position: relative;
+    top: 200px;
+    right: 550px;
+    text-align: center;
+    color: rgb(177, 44, 44);
+    font-family: 'Orbitron', sans-serif;
+    text-decoration: underline;
+    
+}
+
+.parrafo__nosotros {
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+    font-family:'Orbitron', sans-serif ;
+    font-weight: 600;
+    color: white;
+    
+
+}
+
+.imagenes__nosotros {
+        display:flex ;
+
+}
+/*  IMAGENES */
+
+.titulo__imagenes {
+
+    position: relative;
+    top: 200px;
+    right: 550px;
+    text-align: center;
+    color: rgb(177, 44, 44);
+    font-family: 'Orbitron', sans-serif;
+    text-decoration: underline;
+    
+
+}
+
+.seccion__imagenes {
+
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+
+}
+
+.seccion__imagenes img {
+
+    padding: 5px;
+}
+
+.seccion__imagenes p {
+    
+    text-align: inherit;
+    margin: 10px;
+}
+
+
+
+
+/*  PRODUCTOS */
+
+.titulo__productos {
+
+    position: relative;
+    top: 200px;
+    right: 550px;
+    text-align: center;
+    color: rgb(177, 44, 44);
+    font-family: 'Orbitron', sans-serif;
+    text-decoration: underline;
+    
+
+}
+
+.seccion__productos {
+
+    display: grid;
+    grid-template-columns: 10% 10% 10% 10% 10%;
+    grid-template-areas: 
+            
+            "hijoUno hijoDos"
+            "hijoTres hijoCuatro"
+            "hijoCinco";
+
+    
+    
+}
+
+
+
+
+
+.seccion__productos--1 {
+    
+        grid-area: hijoUno;
+        
+
+
+}
+
+.seccion__productos--2 {
+
+        grid-area: hijoDos;
+        
+        
+
+    
+}
+
+
+.seccion__productos--3 {
+
+        grid-area: hijoTres;
+        
+
+    
+}
+
+
+.seccion__productos--4 {
+
+        grid-area: hijoCuatro;
+        
+
+    
+}
+
+.seccion__productos--5 {
+
+        grid-area: hijoCinco;
+       
+
+    
+}
+
+
+
+
+
+
+/*  CONTACTO */
+
+.titulo__contacto {
+
+    position: relative;
+    top: 200px;
+    right: 550px;
+    text-align: center;
+    color: rgb(177, 44, 44);
+    font-family: 'Orbitron', sans-serif;
+    text-decoration: underline;
+
+}
+
+.contacto__imagen--fondo {
+
+    background-color: rgb(193, 202, 70) ;
+
+}
+
+
+
+.contacto__imagen--ubicacion {
+
+    text-align: center;
+
+}
+
+.div__contacto {
+
+   text-align: center;
+   padding: 3px;
+    
+    
+}
+    
+
+
+    
+
+@media screen and (max-width: 600px) {
+
+.enlaces {
+
+    display: none;
+}
+
+.enlaces__hamburguesa {
+
+    display: flex;
+ 
+}
+
+.logo { 
+
+   
+    width: 100px;
+    height: 100px;
+
+    
+}
+
+
+
+
+
+}
